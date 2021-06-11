@@ -6,7 +6,7 @@ import java.util.Calendar;
 public class birthdateCalendar {
 	public static void main(String[] args) {
 		
-		//입력
+	        	//입력
 				int birthday = 20001020;
 				
 				//계산
@@ -25,9 +25,6 @@ public class birthdateCalendar {
 				System.out.println("탄생 월: "+month);
 				System.out.println("탄생 일: "+day);
 				System.out.println("나이: "+age);
-	
-	
-
 
 	}
 	}
