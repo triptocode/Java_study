@@ -28,7 +28,7 @@ public class MethodReturn {
 	    	 // fool 과 일치하면 아래 출력  및 return 으로 fool+"1"값이 nick에 저장되며 메소드종료. 
 	     { System.out.println("fool o 조건과 일치: "+nick+" "); return nick +"+1";  }
 	       
-	   // fool 과 불일치하면 if{}벗어나 아랫줄에 두줄 진행됨. ghkdl
+	   // fool 과 불일치하면 if{}벗어나 아랫줄에 두줄 진행됨.
 	     System.out.println(" fool x,  불일치 단어: "+nick);
 	     return nick+"+2";  // 두번째 리턴된 값은 MethodMAin 클래스에서 출력 
 	       
