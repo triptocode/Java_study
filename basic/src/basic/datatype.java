@@ -1,19 +1,25 @@
-package datatype;
+package basic;
 import java.lang.*;
 
 class datatype {
 	public static void main(String[] args) {
 
 
-		// 정수 데이터타입 4개 : byte, int, long, short 
+		// 정수 데이터타입 4개 : byte 1byte=8bits , int 4byte=32bits, long 8byts=64bits, short 2byts=16bits
 		// 실수 데이터타입 2개 : float, double
+		
+		System.out.println("Byte bits = "+Byte.SIZE);
+		System.out.println("Short bits = "+Short.SIZE);
+		System.out.println("Integer bits = "+Integer.SIZE);
+		System.out.println("Long bits = "+Long.SIZE);
+		
 		
 //		byte = 1byte = 8bit,  물리적인 파일을 다룰 때 사용 
 //		byte -2^7 ~ 2^7 -1 (-128 ~ 127)
 
 //      주의:    자바는 모든 정수값을 기본으로 int로 처리하기에 int외에는 단위붙여 계산하지 않으면 에러발생하기도!		
 
-		byte a = (byte) -129;
+		byte a = (byte) -128;
 		System.out.println("byte -129: "+a);
 		byte aa = (byte) 127;
 		System.out.println("byte 127: "+aa);
@@ -29,14 +35,15 @@ class datatype {
 //		short는 볼 필요 없다(지금은 안씀... 과거의 자료형)
 		
 //		int : 정수 기본형
-//		int  = 4byte , -2,147,483,648 ~ 2,147,483,647
+//		int  = 4byte , (-21억~21억)-2,147,483,648 ~ 2,147,483,647
 		
 		int b = 2100000000;
 		int c = 1234567 * 1234567;
 		System.out.println("int 2100000000 : "+b);
 		System.out.println("int 1234567 : "+c);
+		
 //		long = 8byte		
-//		long : -2^31 ~ 2^31 -1 (-2,147,483,648 ~ 2,147,483,647)
+//		long : -2^31 ~ 2^31 -1 (-922경 ~ +922경)
 		long d = 2100000000L;
 		long e = 1234567L * 1234567L;
 		System.out.println(d);
