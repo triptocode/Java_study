@@ -1,5 +1,4 @@
 package basic;
-import java.lang.*;
 
 class datatype {
 	public static void main(String[] args) {
