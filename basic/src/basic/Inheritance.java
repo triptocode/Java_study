@@ -6,7 +6,7 @@ class Cal{
 	return a+b;
     }	
 	
-	// overloading
+	// overloading                       오버로딩: 같은 이름이어도 매개변수 갯수나 데이터 타입만 다르게하였을때 문법에러가 안남
 	int sum(int a, int b, int c) {
 		return this.sum(a, b)+c;
 		//return a+b+c;
