@@ -9,9 +9,9 @@ public class MethodMain {
 		method.method3();
 		method.method4(1, 5);
 		
-    //  ¸®ÅÏ°ª¹ŞÀ»º¯¼ö =    °´Ã¼.¸Ş¼Òµå¸í(ÀÔ·ÂÀÎ¼ö)
+    //  ë¦¬í„´ê°’ë°›ì„ë³€ìˆ˜ =    ê°ì²´.ë©”ì†Œë“œëª…(ì…ë ¥ì¸ìˆ˜)
 		int value = method.method5(5);
-		System.out.println(" , ¸®ÅÏ°ª: "+value);          	
+		System.out.println(" , ë¦¬í„´ê°’: "+value);          	
 		
 		
 		
@@ -20,7 +20,7 @@ public class MethodMain {
 		 
   String value2 =method.method6("pool");
   System.out.println
-  ("¸®ÅÏ°á°ú (foolish+1 ¶Ç´Â pool+2): "+value2);
+  ("ë¦¬í„´ê²°ê³¼ (foolish+1 ë˜ëŠ” pool+2): "+value2);
 		
 		}
 	}

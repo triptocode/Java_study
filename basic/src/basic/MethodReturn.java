@@ -3,34 +3,34 @@ package basic;
 public class MethodReturn {
 	
 	
-//	   Method = Å¬·¡½º°¡ °¡Áö´Â ±â´É  
+//	   Method = í´ë˜ìŠ¤ê°€ ê°€ì§€ëŠ” ê¸°ëŠ¥  
 //
-//			ÀÔ·Â°ª: ¸Å°³º¯¼ö, ÀÎÀÚ 
-//          °á°ú°ª: ¸®ÅÏ°ª
+//			ì…ë ¥ê°’: ë§¤ê°œë³€ìˆ˜, ì¸ì 
+//          ê²°ê³¼ê°’: ë¦¬í„´ê°’
 	
-//			¸Å°³º¯¼ö parameter :  Àü´ŞµÈ ÀÎÀÚ¸¦ ¹Ş¾ÆµéÀÌ´Â º¯¼ö
-//			ÀÎÀÚ Argument: ¾î¶² ÇÔ¼ö¸¦ È£Ãâ½Ã¿¡ Àü´ŞµÇ´Â °ª
+//			ë§¤ê°œë³€ìˆ˜ parameter :  ì „ë‹¬ëœ ì¸ìë¥¼ ë°›ì•„ë“¤ì´ëŠ” ë³€ìˆ˜
+//			ì¸ì Argument: ì–´ë–¤ í•¨ìˆ˜ë¥¼ í˜¸ì¶œì‹œì— ì „ë‹¬ë˜ëŠ” ê°’
 
-	// public  ¸®ÅÏÅ¸ÀÔ             ¸Ş¼Òµå¸í ( ¸Å°³º¯¼ö) { ±¸Çö }
+	// public  ë¦¬í„´íƒ€ì…             ë©”ì†Œë“œëª… ( ë§¤ê°œë³€ìˆ˜) { êµ¬í˜„ }
 		public  void    method1 (            ) {        }
-		public  void    method2 (   int  x  ) {  System.out.println( x +"º¯¼ö¿Í ¹®ÀÚ  ");       }
-		public  void    method3 (            ) { System.out.println( "¹®ÀÚ");       }
+		public  void    method2 (   int  x  ) {  System.out.println( x +"ë³€ìˆ˜ì™€ ë¬¸ì  ");       }
+		public  void    method3 (            ) { System.out.println( "ë¬¸ì");       }
 	    public  void    method4 (   int a, int b  ) { System.out.println( a+b);  } 
 	    
  	    
-	    public  int     method5 (   int x  ) { System.out.print( "º¯¼ö°ª: "+x);  return 10 *x; }
+	    public  int     method5 (   int x  ) { System.out.print( "ë³€ìˆ˜ê°’: "+x);  return 10 *x; }
 	    
 	    public String method6 (String nick) 
 	    {   
 	    	
 	     if ("fool".equals(nick)) 
 	    	 
-	    	 // fool °ú ÀÏÄ¡ÇÏ¸é ¾Æ·¡ Ãâ·Â  ¹× return À¸·Î fool+"1"°ªÀÌ nick¿¡ ÀúÀåµÇ¸ç ¸Ş¼ÒµåÁ¾·á. 
-	     { System.out.println("fool o Á¶°Ç°ú ÀÏÄ¡: "+nick+" "); return nick +"+1";  }
+	    	 // fool ê³¼ ì¼ì¹˜í•˜ë©´ ì•„ë˜ ì¶œë ¥  ë° return ìœ¼ë¡œ fool+"1"ê°’ì´ nickì— ì €ì¥ë˜ë©° ë©”ì†Œë“œì¢…ë£Œ. 
+	     { System.out.println("fool o ì¡°ê±´ê³¼ ì¼ì¹˜: "+nick+" "); return nick +"+1";  }
 	       
-	   // fool °ú ºÒÀÏÄ¡ÇÏ¸é if{}¹ş¾î³ª ¾Æ·§ÁÙ¿¡ µÎÁÙ ÁøÇàµÊ.
-	     System.out.println(" fool x,  ºÒÀÏÄ¡ ´Ü¾î: "+nick);
-	     return nick+"+2";  // µÎ¹øÂ° ¸®ÅÏµÈ °ªÀº MethodMAin Å¬·¡½º¿¡¼­ Ãâ·Â 
+	   // fool ê³¼ ë¶ˆì¼ì¹˜í•˜ë©´ if{}ë²—ì–´ë‚˜ ì•„ë«ì¤„ì— ë‘ì¤„ ì§„í–‰ë¨.
+	     System.out.println(" fool x,  ë¶ˆì¼ì¹˜ ë‹¨ì–´: "+nick);
+	     return nick+"+2";  // ë‘ë²ˆì§¸ ë¦¬í„´ëœ ê°’ì€ MethodMAin í´ë˜ìŠ¤ì—ì„œ ì¶œë ¥ 
 	       
 	       
 	        
