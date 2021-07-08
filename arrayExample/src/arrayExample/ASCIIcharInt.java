@@ -8,7 +8,7 @@ public class ASCIIcharInt {
 //따라서 char는 정수형데이터타입( byte, short , int ,long )과 밀접한 관계가 있다.
 //char는 자바에서 유니코드( 2 byte 문자 체계)를 사용하므로 2 byte
 // 어떤 문자의 아스키값을 알고 싶으면, char형 변수를 정수형(int)으로 변환하면 된다. char ch='A'; int n = (int)ch;
-	//사용자정의클래스이거나 toString()재정의를 하지않은 클래스의 참조변수는 출력하게 되면 , 클래스타입@16진수(주소)
+//사용자정의클래스이거나 toString()재정의를 하지않은 클래스의 참조변수는 출력하게 되면 , 클래스타입@16진수(주소)
 
 	public static void main(String[] args) {
 		
