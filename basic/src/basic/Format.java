@@ -8,9 +8,9 @@ public class Format {
 	      
 		// System.out.printf()=System.out.format()
 		// %n 줄바꿈  
-		// 월: tb, tm 
+		// 월: tb, tm  
 		 Calendar c = Calendar.getInstance();  
-	      System.out.printf("%tB%n", c); 
+	      System.out.printf("%tm%n", c); 
 	      System.out.format("%tm%n", c); // 07
 	      
 	      System.out.format("%tB%n", c); // 7월
