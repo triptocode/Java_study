@@ -7,7 +7,7 @@ public class Format {
 	 public static void main(String[] args) {
 	      
 		// System.out.printf()=System.out.format()
-		// %n 줄바꿈 
+		// %n 줄바꿈  
 		// 월: tb, tm
 		 Calendar c = Calendar.getInstance();  
 	      System.out.printf("%tB%n", c); 
