@@ -16,14 +16,14 @@ public class Format {
 	      System.out.format("%tp%tI:%tM%n", c, c, c);  // -->오전11:03  / (현재시간)
 	      System.out.format("%tD%n", c);    // -->  07/09/21  / (현재 월,일,연도)
 		 
-		 long n = 461012;
+		 long n = 123456;
 	       
-	      System.out.format("%d%n", n);      //  -->  461012
-	      System.out.format("%08d%n", n);    //  -->  00461012
-	      System.out.format("%+8d%n", n);    //  -->   +461012
-	      System.out.printf("%8d%n",n);      //         461012
-	      System.out.format("%,8d%n", n);    // -->    461,012
-	      System.out.format("%+,8d%n%n", n); //  -->  +461,012
+	      System.out.format("%d%n", n);      //  -->  123456
+	      System.out.format("%08d%n", n);    //  -->  00123456
+	      System.out.format("%+8d%n", n);    //  -->   +123456
+	      System.out.printf("%8d%n",n);      //         123456
+	      System.out.format("%,8d%n", n);    // -->    123,456
+	      System.out.format("%+,8d%n%n", n); //  -->  +123,456
 	      
 	      double pi = Math.PI;
 
