@@ -13,8 +13,6 @@ public class MethodMain {
 		int value = method.method5(5);
 		System.out.println(" , 리턴값: "+value);          	
 		
-		
-		
 		// method.say_nick("pool");
 	    //method.say_nick("pool");
 		 
