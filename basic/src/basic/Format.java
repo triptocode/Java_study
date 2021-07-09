@@ -6,11 +6,13 @@ import java.util.Locale;
 public class Format {
 	 public static void main(String[] args) {
 	      
-		 // System.out.printf()=System.out.format()
+		// System.out.printf()=System.out.format()
 		// %n 줄바꿈 
+		// 월: tb, tm
 		 Calendar c = Calendar.getInstance();  
-	      System.out.printf("%tB%n", c); // 07 
+	      System.out.printf("%tm%n", c); // 07 
 	      System.out.format("%tm%n", c); // 07
+	      
 	      System.out.format("%tB%n", c); // 7월
 	      System.out.format("%tB %te, %tY%n", c, c, c); // --> 7월 9, 2021 / (현재 월,일,연도)
 	      System.out.format("%tp%tI:%tM%n", c, c, c);  // -->오전11:03  / (현재시간)
