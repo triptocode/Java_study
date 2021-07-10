@@ -15,24 +15,36 @@ public class Formact {
 		// %5d: %와 d 사이에 정수를 설정하면 글자길이가 정해진다. 
 		// 기본적으로 오른쪽 정렬이고, -를 붙이면 왼쪽정렬 
 		 
-			 Calendar c = Calendar.getInstance();  
-		      System.out.printf("%tm%n", c); // 07
-		      System.out.format("%tm%n", c); // 07
+			 Calendar calendar = Calendar.getInstance();  
+		      System.out.printf("%tm %n", calendar); // 07
+		      System.out.format("%tm %n", calendar); // 07
 		      
-		      System.out.format("%tB%n", c); // 7월
+		      System.out.format("%tB %n", calendar); // 7월
 		      // 아래코드--> 7월 9, 2021 / (현재 월,일,연도)
-		      System.out.format("%tB %te, %tY%n", c, c, c);
-		      // 아래코드-->오전 11:03  / (현재시간)
-		      System.out.format("%tp %tI:%tM %n", c, c, c);  
-		      // locale 국가설정  
-		      Date today = new Date(0);
-		      System.out.println(String.format(Locale.CHINESE, "%tp",today)); //am
-		      System.out.println(String.format(Locale.CHINESE, "%Tp",today)); //AM
-		           
+		      System.out.format("%tB %te %tY %n", calendar, calendar, calendar);
+		      // 아래코드-->오전 11:03  /(오전, 시 ,분 )
+		      System.out.format("%tp %tI:%tM %n", calendar, calendar, calendar);  
 		      // 아래코드-->  07/09/21  / (현재 월,일,연도)
-		      System.out.format("%tD%n%n", c);   
-		     
+		      System.out.format("%tD %n%n", calendar);  
 		      
+		      // Date ! , locale 국가설정  
+		      Date today = new Date(0);
+		      System.out.println(String.format(Locale.KOREAN, "%tp",today)); //am
+		      System.out.println(String.format(Locale.ENGLISH, "%Tp",today)); //AM
+		      System.out.println(today+"\n");
+		      
+		      System.out.println(String.format(" %tF ", today));
+		      System.out.println(String.format(" %tT, %tR ", today, today));// (시,분,초) (시,분)
+		      System.out.println(String.format(" %ty,  %tY", today, today));	// 연도 뒷두자리, 연도 네자리 	
+		      System.out.println(String.format(" %tm", today)); // 01  
+		      System.out.println(String.format(" %td, %te", today, today));  //01, 1
+
+		      System.out.println(String.format("%tH", today)); // 09 /timezone GMT라 한국현재시간과 다르게 출력
+		      System.out.println(String.format("%tM", today)); // 00
+		      System.out.println(String.format("%tS", today)); // 00 
+		      System.out.println(String.format(" %tZ, %tz", today, today)); //GMT+09:00, +0900
+
+
 			 
 			 long n = 123456;
 		       

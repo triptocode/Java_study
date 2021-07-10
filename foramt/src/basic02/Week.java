@@ -18,11 +18,11 @@ import java.time.format.TextStyle;
 	      // Tuesday
 	      System.out.printf("%s%n", DayOfWeek.THURSDAY.minus(2).getDisplayName(TextStyle.FULL, locale1));
 	      
-	      LocalDateTime now = LocalDateTime.now();
-	     String ko = now.format(DateTimeFormatter.ofPattern("MM岿 dd老(E)").withLocale(Locale.forLanguageTag("ko")));
-	      System.out.println(ko);
-	      String ja = now.format(DateTimeFormatter.ofPattern("MM岿 dd老(E)").withLocale(Locale.forLanguageTag("ja")));
-	      System.out.println(ja);
+	     LocalDateTime now = LocalDateTime.now();
+	   String ko = now.format(DateTimeFormatter.ofPattern("MM岿 dd老(E)").withLocale(Locale.forLanguageTag("ko")));
+	   System.out.println(ko);
+	   String ja = now.format(DateTimeFormatter.ofPattern("MM岿 dd老(E)").withLocale(Locale.forLanguageTag("ja")));
+	   System.out.println(ja);
 	      
 	   }
 }
