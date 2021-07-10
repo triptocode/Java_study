@@ -1,5 +1,6 @@
 package basic02;
 
+import java.sql.Date;
 import java.util.Calendar;
 import java.util.Locale;
 
@@ -23,8 +24,15 @@ public class Formact {
 		      System.out.format("%tB %te, %tY%n", c, c, c);
 		      // 아래코드-->오전 11:03  / (현재시간)
 		      System.out.format("%tp %tI:%tM %n", c, c, c);  
+		      // locale 국가설정  
+		      Date today = new Date(0);
+		      System.out.println(String.format(Locale.CHINESE, "%tp",today)); //am
+		      System.out.println(String.format(Locale.CHINESE, "%Tp",today)); //AM
+		           
 		      // 아래코드-->  07/09/21  / (현재 월,일,연도)
 		      System.out.format("%tD%n%n", c);   
+		     
+		      
 			 
 			 long n = 123456;
 		       
