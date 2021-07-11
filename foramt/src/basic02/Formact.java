@@ -22,20 +22,22 @@ public class Formact {
 		      System.out.format("%tB %n", calendar); // 7월
 		      // 아래코드--> 7월 9, 2021 / (현재 월,일,연도)
 		      System.out.format("%tB %te %tY %n", calendar, calendar, calendar);
-		      // 아래코드-->오전 11:03  /(오전, 시 ,분 )
+		                       // 오전 11:03  
 		      System.out.format("%tp %tI:%tM %n", calendar, calendar, calendar);  
+		                        //am 01:04 
+		      System.out.format(Locale.ENGLISH, "%tp %tI:%tM %n", calendar, calendar, calendar);
 		      // 아래코드-->  07/09/21  / (현재 월,일,연도)
 		      System.out.format("%tD %n%n", calendar);  
 		      
 		      // Date ! , locale 국가설정  
 		      Date today = new Date(0);
+
 		      System.out.println(String.format(Locale.KOREAN, "%tp",today)); //am
 		      System.out.println(String.format(Locale.ENGLISH, "%Tp",today)); //AM
-		      System.out.println(today+"\n");
-		      
-		      System.out.println(String.format(" %tF ", today));
-		      System.out.println(String.format(" %tT, %tR ", today, today));// (시,분,초) (시,분)
-		      System.out.println(String.format(" %ty,  %tY", today, today));	// 연도 뒷두자리, 연도 네자리 	
+		      System.out.println(today); // 1970-01-01
+		      System.out.println(String.format("%tF", today)); //  1970-01-01 
+		      System.out.println(String.format(" %tT, %tR ", today, today));// 09:00:00, 09:00 
+		      System.out.println(String.format(" %ty,  %tY", today, today));// 70,  1970 	
 		      System.out.println(String.format(" %tm", today)); // 01  
 		      System.out.println(String.format(" %td, %te", today, today));  //01, 1
 
