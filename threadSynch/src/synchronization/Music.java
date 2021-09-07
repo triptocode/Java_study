@@ -3,7 +3,7 @@ package synchronization;
 public class Music {
 	
  public synchronized void hiphop (){
- 	 for(int n=0; n<5; n++) {System.out.println(" hiphop 5¹ø ¿¬¼ÓÃâ·Â ");         //synchronized void ·Î ÀüÃ¼¼³Á¤ 
+ 	 for(int n=0; n<5; n++) {System.out.println(" hiphop 5ë²ˆ ì—°ì†ì¶œë ¥ ");         //synchronized void ë¡œ ì „ì²´ì„¤ì • 
 	     try { Thread.sleep((int)(Math.random()*1000+1)); } 
 	     catch (InterruptedException e) { e.printStackTrace();}
      }   // for end 	 
@@ -11,14 +11,14 @@ public class Music {
 	
 
  public void ballad (){
-	 for(int n=0; n<4; n++) synchronized(this) {System.out.println(" ballad 4¹ø ¿¬¼ÓÃâ·Â");   //synchronized(this) ·Î Ãâ·Â¹®¿¡¸¸ ¼³Á¤ 
+	 for(int n=0; n<4; n++) synchronized(this) {System.out.println(" ballad 4ë²ˆ ì—°ì†ì¶œë ¥");   //synchronized(this) ë¡œ ì¶œë ¥ë¬¸ì—ë§Œ ì„¤ì • 
 	     try { Thread.sleep((int)(Math.random()*1000+1)); } 
 	     catch (InterruptedException e) { e.printStackTrace();}
          } // for end 
  } // ballad end 	
  
  public void jazz (){
- 	 for(int n=0; n<4; n++) {System.out.println(" (Àá½Ã µè°í°¡´Â) jazz ~ ¢Ý¢Û~¢Ü ¢Û¢Ý¢Û ");            // synchronized ¼³Á¤ÇÏÁö ¾Ê°í ¾ÈÀüÇÑ synch ¼³Á¤µÈ µ¥ÀÌÅÍ Áß°£Áß°£¿¡µµ Ãâ·ÂµÇ°Ô Ç®¾îµÐ´Ù. 
+ 	 for(int n=0; n<4; n++) {System.out.println(" (ìž ì‹œ ë“£ê³ ê°€ëŠ”) jazz ~ â™¬â™©~â™ª â™©â™¬â™© ");            // synchronized ì„¤ì •í•˜ì§€ ì•Šê³  ì•ˆì „í•œ synch ì„¤ì •ëœ ë°ì´í„° ì¤‘ê°„ì¤‘ê°„ì—ë„ ì¶œë ¥ë˜ê²Œ í’€ì–´ë‘”ë‹¤. 
     	 try { Thread.sleep((int)(Math.random()*1000+1)); } 
 	     catch (InterruptedException e) { e.printStackTrace();}
      } // for end 

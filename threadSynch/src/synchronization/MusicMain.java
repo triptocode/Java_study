@@ -4,7 +4,7 @@ public class MusicMain {
 	
 	public static void main(String[] args) {
 		
-	Music musicObj = new Music();                         // ∞¯¿Ø∞¥√º  Music musicObj
+	Music musicObj = new Music();                         // Í≥µÏú†Í∞ùÏ≤¥  Music musicObj
 		
 	PlayerThread player1 = new PlayerThread(1, musicObj);  
 	PlayerThread player2 = new PlayerThread(1, musicObj);

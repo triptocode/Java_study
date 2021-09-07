@@ -1,4 +1,3 @@
-
 package quiz;
 
 public class Factorial {
@@ -6,18 +5,16 @@ public class Factorial {
    public static void main(String[] args) 
    {
 		int input = 3;       // 3!
-		System.out.println(f(input)); // ¸ÇÃ³À½Àº main¿¡¼­ f(3) ¸Ş¼Òµå°¡ ½ÇÇà     
+		System.out.println(f(input)); // ë§¨ì²˜ìŒì€ mainì—ì„œ f(3) ë©”ì†Œë“œê°€ ì‹¤í–‰     
 	}
 
-	public static int f(int n) { // fact(3)¿¡¼­ nÀº ÇöÀç 3À¸·Î 1º¸´Ù Ä¿¼­,  
+	public static int f(int n) { // fact(3)ì—ì„œ nì€ í˜„ì¬ 3ìœ¼ë¡œ 1ë³´ë‹¤ ì»¤ì„œ,  
 
 		if (n <= 1)
 			return n;
 		else 
-			return f(n-1) * n;   // else¸¦ Å¸°í fact(2)°¡ È£ÃâµÈ´Ù. 
-		                        // Ã³À½ È£ÃâµÈ fact(4)´Â Á¾·áµÇÁö ¾Ê°í Stack¿¡ ½×ÀÎ»óÅÂ°í, fact(3)ÀÌ ½ÇÇàµÇ¸ç 1ÀÌ µÉ¶§±îÁö ¹İº¹µÈ´Ù. 
+			return f(n-1) * n;   // elseë¥¼ íƒ€ê³  fact(2)ê°€ í˜¸ì¶œëœë‹¤. 
+		                        // ì²˜ìŒ í˜¸ì¶œëœ fact(4)ëŠ” ì¢…ë£Œë˜ì§€ ì•Šê³  Stackì— ìŒ“ì¸ìƒíƒœê³ , fact(3)ì´ ì‹¤í–‰ë˜ë©° 1ì´ ë ë•Œê¹Œì§€ ë°˜ë³µëœë‹¤. 
 
                                  	}
 }
-
-

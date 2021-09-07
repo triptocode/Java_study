@@ -4,12 +4,12 @@ public class ShapeMain {
 	
 	public static void main(String[] args) {
 		
-		ShapeThread shapeThread1= new ShapeThread("¡Ú");
-		ShapeThread shapeThread2= new ShapeThread("¡Ù");
-		ShapeThread shapeThread3= new ShapeThread("¢¼");
-		ShapeThread shapeThread4= new ShapeThread("¢»");
-		ShapeThread shapeThread5= new ShapeThread("¢À");
-		ShapeThread shapeThread6= new ShapeThread("¢¿");
+		ShapeThread shapeThread1= new ShapeThread("â˜…");
+		ShapeThread shapeThread2= new ShapeThread("â˜†");
+		ShapeThread shapeThread3= new ShapeThread("â™ ");
+		ShapeThread shapeThread4= new ShapeThread("â™¤");
+		ShapeThread shapeThread5= new ShapeThread("â™£");
+		ShapeThread shapeThread6= new ShapeThread("â™§");
 		
 		
 		
