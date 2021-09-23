@@ -15,12 +15,12 @@ public void run() {
 	for (int i = 0; i<3; i++) 
 	  { System.out.println(shape); 
 		
-	    try { Thread.sleep( (int) (Math.random()*2000+1) ); }     // Math.random() * ìµœëŒ€ê°’ : 0.0 =< number <1.0 ì‚¬ì´ ìˆ«ìžë¥¼ ëžœë¤ìœ¼ë¡œ ìƒì„±,  (int)ë¥¼ ë¶™ì—¬ ì†Œìˆ˜ë¥¼ ì •ìˆ˜ë¡œ ìºìŠ¤íŒ…
-		catch (InterruptedException e) { e.printStackTrace(); }   // Math.radomì€ 0ë¶€í„° ëžœë¤ìƒì„±ë˜ê¸°ì— 1ë¶€í„° ë½‘ê³ ì‹¶ìœ¼ë©´ +1ì„ ì¨ì¤€ë‹¤. 
+	    try { Thread.sleep( (int) (Math.random()*2000+1) ); }     // Math.random() * ÃÖ´ë°ª : 0.0 =< number <1.0 »çÀÌ ¼ýÀÚ¸¦ ·£´ýÀ¸·Î »ý¼º,  (int)¸¦ ºÙ¿© ¼Ò¼ö¸¦ Á¤¼ö·Î Ä³½ºÆÃ
+		catch (InterruptedException e) { e.printStackTrace(); }   // Math.radomÀº 0ºÎÅÍ ·£´ý»ý¼ºµÇ±â¿¡ 1ºÎÅÍ »Ì°í½ÍÀ¸¸é +1À» ½áÁØ´Ù. 
 		  
 	   }
 		
-} // run ì¢…ë£Œ 
+} // run Á¾·á 
 	
 	
 }
