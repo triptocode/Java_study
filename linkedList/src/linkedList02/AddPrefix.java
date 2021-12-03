@@ -2,7 +2,9 @@ package linkedList02;
 
 public class AddPrefix 
 {
+	
 	public static void main(String[] args) {
+		
 		String input, result;
 		
 		input ="abc";
@@ -17,12 +19,17 @@ public class AddPrefix
 	    result=addPrefix( input ) ;
 	    System.out.println( result );
 	   
-	    input = new String ("");                         // ì—ëŸ¬ë°œìƒ: new String ("")ì€  return str ê°’ì¸ ""ìœ¼ë¡œ ë‚˜ì˜¤ì§€ ì•Šê³  "prefix-"  ë¡œ ì¶œë ¥ëœë‹¤. 
+	    input = new String ("");                         // ¿¡·¯¹ß»ı: new String ("")Àº  return str °ªÀÎ ""À¸·Î ³ª¿ÀÁö ¾Ê°í "prefix-"  ·Î Ãâ·ÂµÈ´Ù. 
 	    result=addPrefix( input ) ;
 	    System.out.println( result );    	} 
 
+	
+	
 	public static String addPrefix( String str) {
-		if (str!=null && str!="") { // ì—ëŸ¬ì›ì¸ì½”ë“œ:  str!=""ë¡œ ì„¤ì •í•  ê²½ìš°, ì£¼ì†Œê°’ ë¹„êµì—°ì‚°ìë¡œ ë¬¸ìë‚´ìš© ìì²´ì— ëŒ€í•œ ë¹„êµê°€ ë¶ˆê°€ í•˜ë‹¤. 
-			return "prefix-"+str;	} //í•´ê²°ë°©ë²•: ë‚´ìš©ê°’ ìì²´ë¥¼ ë¹„êµí• ìˆ˜ìˆê²Œ str!="" --> !str.equals("")ë¡œ ë³€ê²½í•œ ìš°ì¸¡ ì½”ë“œë¥¼ ì ìš©í•œë‹¤. if (str !=null && !str.equals("")) {
-		return str;                          	}	
+		
+		if (str!=null && str!="") { // ¿¡·¯¿øÀÎÄÚµå:  str!=""·Î ¼³Á¤ÇÒ °æ¿ì, ÁÖ¼Ò°ª ºñ±³¿¬»êÀÚ·Î ¹®ÀÚ³»¿ë ÀÚÃ¼¿¡ ´ëÇÑ ºñ±³°¡ ºÒ°¡ ÇÏ´Ù. 
+			return "prefix-"+str;	} //ÇØ°á¹æ¹ı: ³»¿ë°ª ÀÚÃ¼¸¦ ºñ±³ÇÒ¼öÀÖ°Ô str!="" --> !str.equals("")·Î º¯°æÇÑ ¿ìÃø ÄÚµå¸¦ Àû¿ëÇÑ´Ù. if (str !=null && !str.equals("")) {
+		return str;                          	
+	}	
+	
 }

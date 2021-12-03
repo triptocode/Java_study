@@ -1,42 +1,42 @@
 package linkedlist01;
 
 public class LinkedList 
-{   private Node head; // ì²«ë²ˆì§¸ ë…¸ë“œ
-private Node tail; // ì œì¼ë ë…¸ë“œë¥¼ ì•Œë ¤ì£¼ëŠ” ì •ë³´ê°€ ë‹´ê¸´ tail 
-private int size = 0; // ëª‡ê°œì˜ elementê°€ ì¡´ì¬í•˜ëŠ”ì§€
+{   private Node head; // Ã¹¹øÂ° ³ëµå
+private Node tail; // Á¦ÀÏ³¡ ³ëµå¸¦ ¾Ë·ÁÁÖ´Â Á¤º¸°¡ ´ã±ä tail 
+private int size = 0; // ¸î°³ÀÇ element°¡ Á¸ÀçÇÏ´ÂÁö
 
 private class Node
 {	private Object data;
 	private Node next;
 	
 	public Node(Object input) {
-		this.data = input; // inputì€ ë…¸ë“œì˜ ê°’ì„ ë„£ëŠ” ë§¤ê°œë³€ìˆ˜ 
+		this.data = input; // inputÀº ³ëµåÀÇ °ªÀ» ³Ö´Â ¸Å°³º¯¼ö 
 		this.next=null;	}
 	
-	public String toString() {  // ë°ì´í„°ê°’ ì¶œë ¥í•˜ì—¬ í™•ì¸í•˜ê¸° ìœ„í•œ ì½”ë“œ 
+	public String toString() {  // µ¥ÀÌÅÍ°ª Ãâ·ÂÇÏ¿© È®ÀÎÇÏ±â À§ÇÑ ÄÚµå 
 		return String.valueOf(this.data);	}
 }
 public void addFirst(Object input) {
 	Node newNode = new Node(input);
-	newNode.next = head; // ìƒˆë¡œìƒì„±ëœ ë…¸ë“œê°€ ë‹¤ìŒë…¸ë“œì˜ í—¤ë“œê°’ì •ë³´ë¥¼ ê°€ì ¸ì˜¤ê²Œ í•¨.  
-	head = newNode;   // ìƒˆë¡œ ìƒì„±ëœ ë…¸ë“œê°€ í—¤ë“œê°’ì„ ë‹¤ì‹œ ê°€ì§€ê²Œë¨ 
-	size++; // ë°ì´í„°ê°€ ì¶”ê°€ë˜ë©´ì„œ ì „ì²´í¬ê¸°ê°€ 1 ìƒìŠ¹
+	newNode.next = head; // »õ·Î»ı¼ºµÈ ³ëµå°¡ ´ÙÀ½³ëµåÀÇ Çìµå°ªÁ¤º¸¸¦ °¡Á®¿À°Ô ÇÔ.  
+	head = newNode;   // »õ·Î »ı¼ºµÈ ³ëµå°¡ Çìµå°ªÀ» ´Ù½Ã °¡Áö°ÔµÊ 
+	size++; // µ¥ÀÌÅÍ°¡ Ãß°¡µÇ¸é¼­ ÀüÃ¼Å©±â°¡ 1 »ó½Â
 	if(head.next ==null) {tail = head; }
                                  }
-public void add(int index, Object input) // indexë²ˆí˜¸ ìë¦¬ì— inputìœ¼ë¡œ ë°ì´í„°ì¶”ê°€ 
+public void add(int index, Object input) // index¹øÈ£ ÀÚ¸®¿¡ inputÀ¸·Î µ¥ÀÌÅÍÃß°¡ 
  {  	if(index==0) {addFirst(input);}
 	else 
   { Node temp1 = head;
 	for( int i =0; i<index-1; i++) {temp1 = temp1.next;	}
 	
-	Node temp2 = temp1.next; // temp2 ëŠ” temp1ì˜nextë¼ê³  ì„ ì–¸ 
-	Node newNode = new Node(input); // inputê°’ì„ ë°›ì€ ìƒˆë¡œìš´ newNode ìƒì„± 
-	temp1.next = newNode; // temp1.next: ì•ì˜ë…¸ë“œê°€ ìƒˆë¡œìƒê¸´ newNodeë¥¼ ê°€ë¦¬í‚¤ê²Œí•¨ 
-	newNode.next = temp2; // newNode.next: ìƒˆë¡œìƒê¸´ newNodeê°€ ê·¸ë‹¤ìŒ ë…¸ë“œë¥¼ ê°€ë¦¬í‚¤ê²Œí•¨
+	Node temp2 = temp1.next; // temp2 ´Â temp1ÀÇnext¶ó°í ¼±¾ğ 
+	Node newNode = new Node(input); // input°ªÀ» ¹ŞÀº »õ·Î¿î newNode »ı¼º 
+	temp1.next = newNode; // temp1.next: ¾ÕÀÇ³ëµå°¡ »õ·Î»ı±ä newNode¸¦ °¡¸®Å°°ÔÇÔ 
+	newNode.next = temp2; // newNode.next: »õ·Î»ı±ä newNode°¡ ±×´ÙÀ½ ³ëµå¸¦ °¡¸®Å°°ÔÇÔ
 	size++;
 	if(newNode.next ==null) { tail =newNode;}	
   } 
-}  // ì¶œë ¥ì„ ìœ„í•œ ì½”ë“œ 
+}  // Ãâ·ÂÀ» À§ÇÑ ÄÚµå 
 public String toString() {
 if(head == null) { return "[]";}
 Node temp = head;
@@ -49,9 +49,3 @@ str+= temp.data;
 return str+"]";      
 }   
 }
-	
-
-		
-
-
-	
