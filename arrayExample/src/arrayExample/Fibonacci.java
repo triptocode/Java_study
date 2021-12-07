@@ -7,11 +7,11 @@ public class Fibonacci {
 		for(int i=0; i < arr.length; i++) {
 			if(i <= 1) {
 				arr[i] = 1;
-			} else {		// i > 2 ì¸ ê²½ìš°
+			} else {		// i > 2 ÀÎ °æ¿ì
 				arr[i] = arr[i - 1] + arr[i - 2];
 			}
 		}		
-		for(int value : arr) {    // ìš”ì†Œì˜ íƒ€ì…ë³€ìˆ˜ : ë°°ì—´ ë˜ëŠ” ì»¬ë ‰ì…˜
+		for(int value : arr) {    // ¿ä¼ÒÀÇ Å¸ÀÔº¯¼ö : ¹è¿­ ¶Ç´Â ÄÃ·º¼Ç
 			System.out.println(value);
 		}
 	}
@@ -23,6 +23,3 @@ public class Fibonacci {
 	}
 
 }
-	
-
-

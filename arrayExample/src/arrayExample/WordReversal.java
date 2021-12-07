@@ -1,7 +1,7 @@
 package arrayExample;
 
 
-public class WordReversal {             // ì´ ë‘ê°€ì§€ ë°©ë²•ìœ¼ë¡œ í’€ì–´ë´¤ìŠµë‹ˆë‹¤.  ë°©ë²•1 
+public class WordReversal {             // ÃÑ µÎ°¡Áö ¹æ¹ýÀ¸·Î Ç®¾îºÃ½À´Ï´Ù.  ¹æ¹ý1 
 	
 	// Java program to reverse a string
 	// s = input()
@@ -9,20 +9,17 @@ public class WordReversal {             // ì´ ë‘ê°€ì§€ ë°©ë²•ìœ¼ë¡œ í’€ì–´ë´¤ì
 	 
 	 public static void main(String[] args)
 	    {
-	       String s[] = "He has a daughter".split(" "); // " "ê³µë°±ì„ ê¸°ì¤€ìœ¼ë¡œ í•´ë‹¹ë¬¸ìž¥ì„ ë‚˜ëˆ„ë©´, ì´4ê°œì˜ ë‹¨ì–´ë¡œ ë‚˜ëˆ„ì–´ì ¸ì„œ ë°°ì—´ì— ë“¤ì–´ê°„ë‹¤.
-	       System.out.println("ë°°ì—´ 0ë²ˆ: "+  s[0]); // he
-	       System.out.println("ë°°ì—´ 1ë²ˆ: "+  s[1]); // has 
-	       System.out.println("ë°°ì—´ 2ë²ˆ: "+  s[2]); // a 
-	       System.out.println("ë°°ì—´ 3ë²ˆ: "+  s[3]); // daughter
+	       String s[] = "He has a daughter".split(" "); // " "°ø¹éÀ» ±âÁØÀ¸·Î ÇØ´ç¹®ÀåÀ» ³ª´©¸é, ÃÑ4°³ÀÇ ´Ü¾î·Î ³ª´©¾îÁ®¼­ ¹è¿­¿¡ µé¾î°£´Ù.
+	       System.out.println("¹è¿­ 0¹ø: "+  s[0]); // he
+	       System.out.println("¹è¿­ 1¹ø: "+  s[1]); // has 
+	       System.out.println("¹è¿­ 2¹ø: "+  s[2]); // a 
+	       System.out.println("¹è¿­ 3¹ø: "+  s[3]); // daughter
 	        
 	         String blank = "";
-	        for (int i = s.length - 1; i >= 0; i--) // ë°°ì—´ ìˆœì„œ ì—­ìœ¼ë¡œ  (3,2,1,0 ) í•˜ì—¬ ë‹¨ì–´ ìˆœì„œë¥¼ ê±°ê¾¸ëŸ¬ í•´ì¤€ë‹¤. 
-	        {	blank += s[i] + " "; // 4ê°œ ë‹¨ì–´ ì‚¬ì´ì— ê³µë°±ì„ ì¶”ê°€í•˜ì—¬ ë„ì–´ì“°ê¸° ì ìš©í•˜ê³ , ë‹¨ì–´ê°„ì— ê²°í•©
+	        for (int i = s.length - 1; i >= 0; i--) // ¹è¿­ ¼ø¼­ ¿ªÀ¸·Î  (3,2,1,0 ) ÇÏ¿© ´Ü¾î ¼ø¼­¸¦ °Å²Ù·¯ ÇØÁØ´Ù. 
+	        {	blank += s[i] + " "; // 4°³ ´Ü¾î »çÀÌ¿¡ °ø¹éÀ» Ãß°¡ÇÏ¿© ¶ç¾î¾²±â Àû¿ëÇÏ°í, ´Ü¾î°£¿¡ °áÇÕ
 	        }
 	        
-	        System.out.println("ì—­ìˆœìœ¼ë¡œ ë‹¨ì–´ ìœ„ì¹˜ ë°”ê¾¼ ê²°ê³¼: "+ blank);
+	        System.out.println("¿ª¼øÀ¸·Î ´Ü¾î À§Ä¡ ¹Ù²Û °á°ú: "+ blank);
 	    }
 }
-
-
-

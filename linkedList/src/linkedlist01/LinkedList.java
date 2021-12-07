@@ -1,6 +1,6 @@
 package linkedlist01;
 
-public class LinkedList 
+public class LinkedList  
 {   private Node head; // 첫번째 노드
 private Node tail; // 제일끝 노드를 알려주는 정보가 담긴 tail 
 private int size = 0; // 몇개의 element가 존재하는지

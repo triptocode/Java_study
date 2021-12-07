@@ -2,13 +2,13 @@ package arrayExample;
 
 import java.util.Stack; 
 
-public class WordReversal2 {                // // ì´ ë‘ê°€ì§€ ë°©ë²•ìœ¼ë¡œ í’€ì–´ë´¤ìŠµë‹ˆë‹¤.  ë°©ë²•2 
+public class WordReversal2 {                // // ÃÑ µÎ°¡Áö ¹æ¹ıÀ¸·Î Ç®¾îºÃ½À´Ï´Ù.  ¹æ¹ı2 
 	
 	public static void main(String[] args) {
-	      Stack<String> stack = new Stack<>();         // stack ì€ LIFO êµ¬ì¡°. ê°€ì¥ë§ˆì§€ë§‰ì— ë“¤ì–´ê°„ ë°ì´í„°ê°€ ê°€ì •ë¨¼ì € ë‚˜ì˜¤ëŠ” LastInFirstOut
+	      Stack<String> stack = new Stack<>();         // stack Àº LIFO ±¸Á¶. °¡Àå¸¶Áö¸·¿¡ µé¾î°£ µ¥ÀÌÅÍ°¡ °¡Á¤¸ÕÀú ³ª¿À´Â LastInFirstOut
 	      String sentence = "He has a daughter";
-	      String word[] = sentence.split(" ");         // " "ê³µë°±ì„ ê¸°ì¤€ìœ¼ë¡œ í•´ë‹¹ë¬¸ì¥ì„ ë‚˜ëˆ„ë©´, ì´4ê°œì˜ ë‹¨ì–´ë¡œ ë‚˜ëˆ„ì–´ì ¸ì„œ ë°°ì—´ì— ë“¤ì–´ê°„ë‹¤
-	       for (String str : word) stack.push(str);     // pushë¡œ ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ê³  
-	       while (!stack.empty()) System.out.print(stack.pop()+" "); // pop ìœ¼ë¡œ ë‹¨ì–´ë¥¼ êº¼ë‚¸ë‹¤. ìŠ¤íƒì€  LIFO êµ¬ì¡°ë¼ì„œ ìˆœì„œê°€ ì—­ìœ¼ë¡œ ì ìš©ì´ ëœë‹¤. 
+	      String word[] = sentence.split(" ");         // " "°ø¹éÀ» ±âÁØÀ¸·Î ÇØ´ç¹®ÀåÀ» ³ª´©¸é, ÃÑ4°³ÀÇ ´Ü¾î·Î ³ª´©¾îÁ®¼­ ¹è¿­¿¡ µé¾î°£´Ù
+	       for (String str : word) stack.push(str);     // push·Î ´Ü¾î¸¦ ÀÔ·ÂÇÏ°í 
+	       while (!stack.empty()) System.out.print(stack.pop()+" "); // pop À¸·Î ´Ü¾î¸¦ ²¨³½´Ù. ½ºÅÃÀº  LIFO ±¸Á¶¶ó¼­ ¼ø¼­°¡ ¿ªÀ¸·Î Àû¿ëÀÌ µÈ´Ù. 
 	    }
 }

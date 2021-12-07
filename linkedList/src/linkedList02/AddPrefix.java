@@ -1,9 +1,8 @@
 package linkedList02;
 
 public class AddPrefix 
-{
-	
-	public static void main(String[] args) {
+{    
+	public static void main(String[] args) {	
 		
 		String input, result;
 		
@@ -23,7 +22,6 @@ public class AddPrefix
 	    result=addPrefix( input ) ;
 	    System.out.println( result );    	} 
 
-	
 	
 	public static String addPrefix( String str) {
 		
